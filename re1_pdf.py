@@ -74,7 +74,7 @@ el = [
       "%.1f k&Omega;. With feedback the mid-band gain drops to %.2f k&Omega; and"
       % (abs(r.Ap) / 1e3, abs(Ap_b) / 1e3)),
     p("f<sub>Lf</sub> = f<sub>L</sub>/(1+A'<sub>0</sub>&beta;') = <b>%.0f Hz</b>, "
-      "f<sub>Hf</sub> = f<sub>H</sub>(1+A'<sub>0</sub>&beta;') = <b>%.0f kHz</b>."
+      "f<sub>Hf</sub> = f<sub>H</sub>(1+A'<sub>0</sub>&beta;') = <b>%.1f kHz</b>."
       % (r.fLf, r.fHf / 1e3)),
     p("Bandwidth: %.1f kHz without feedback, %.1f kHz with feedback."
       % ((r.fH - r.fL) / 1e3, (r.fHf - r.fLf) / 1e3)),
@@ -89,7 +89,7 @@ el = [
       "A<sub>f</sub> = K<sub>v</sub> = -23.6 (correct: %.2f), Z<sub>i</sub> = 154.8 &Omega; (correct: %.1f &Omega;), "
       "Z<sub>o</sub> = 157.5 &Omega; (correct: %.1f &Omega;)." % (abs(r.Ap)/1e3, r.Kv, r.Zi, r.Zo)),
     p("- f<sub>Hf</sub> = 1364 kHz in R1.pdf is wrong: f<sub>H</sub>(1+A'<sub>0</sub>&beta;') = 400 kHz x %.3f = "
-      "<b>%.0f kHz</b> (even with its own 1 + A'<sub>0</sub>&beta;' = 1.894 the result would be 757.6 kHz)." % (r.D, r.fHf/1e3)),
+      "<b>%.1f kHz</b> (even with its own 1 + A'<sub>0</sub>&beta;' = 1.894 the result would be 757.6 kHz)." % (r.D, r.fHf/1e3)),
 ]
 
 SimpleDocTemplate("alt_R0_R1.pdf", pagesize=A4, leftMargin=2 * cm, rightMargin=2 * cm,

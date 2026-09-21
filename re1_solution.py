@@ -51,4 +51,4 @@ if __name__ == "__main__":
     print(f"check, Rg included : Af = {Af/1e3:.2f} kohm, Kv = {Kv_check:.2f}")
     print(f"A' = {Ap/1e3:.2f} kohm, beta' = {bp*1e6:.0f} uS, "
           f"A/(1+A beta) = {Ap/(1+Ap*bp)/1e3:.2f} kohm")
-    print(f"Zo = {Zo:.1f} ohm, 1+A'b' = {D:.3f}, fLf = {fLf:.0f} Hz, fHf = {fHf/1e3:.0f} kHz")
+    print(f"Zo = {Zo:.1f} ohm, 1+A'b' = {D:.3f}, fLf = {fLf:.0f} Hz, fHf = {fHf/1e3:.1f} kHz")

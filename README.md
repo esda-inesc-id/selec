@@ -34,11 +34,11 @@ New exercises: add `reN_solution.py` and `reN_pdf.py` next to these.
 | A' / beta' | -43.9 kohm / -20 uS |
 | Vo/Vs | -23.39 |
 | Zi / Zo | 159.3 ohm / 158.7 ohm |
-| fLf / fHf | 266 Hz / 751 kHz |
+| fLf / fHf | 266 Hz / 751.5 kHz |
 
 ## Errors in the original R1.pdf
 
 - gm is printed as 584 mS; 14.26 mA / 25 mV = 570.6 mS.
 - Rpi is printed as 542.5 ohm; beta0/gm = 350.5 ohm (later numbers use 342.5 ohm).
 - Hence A' = 44.7 kohm, Af = Kv = -23.6, Zi = 154.8 ohm, Zo = 157.5 ohm are slightly off.
-- fHf = 1364 kHz is wrong: fH(1 + A'0 beta') = 751 kHz.
+- fHf = 1364 kHz is wrong: fH(1 + A'0 beta') = 751.5 kHz.
